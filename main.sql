@@ -1,0 +1,14 @@
+BEGIN TRANSACTION;
+
+
+CREATE TABLE Patients(PatientId AUTO_INCREMENT PRIMARY KEY, Patients text, HospitalId int);
+
+
+INSERT INTO Patients VALUES(1,'Tom', 10007);
+INSERT INTO Patients VALUES(2,'Lucy', 10008);
+INSERT INTO Patients VALUES(3,'Frank', 10009);
+INSERT INTO Patients VALUES(4,'Jane', 10010);
+INSERT INTO Patients VALUES(5,'Robert', 10011);
+COMMIT;
+
+SELECT * FROM Patients;
